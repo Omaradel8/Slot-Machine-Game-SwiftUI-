@@ -25,6 +25,31 @@ struct ContentView: View {
                 LogoView()
 
                 Spacer()
+                
+                // MARK: - SCRORE
+                HStack {
+                    Text("Your\nCoins".uppercased())
+                        .foregroundColor(.white)
+                        .font(.system(size: 10, weight: .bold, design: .rounded))
+                    
+                    Text("100")
+                        .foregroundColor(.white)
+                        .font(.system(.title, design: .rounded))
+                        .fontWeight(.heavy)
+                        .shadow(color: Color("ColorTransparentBlack"),
+                                radius: 0, x: 0, y: 3)
+                        .layoutPriority(1)
+                }
+                .padding(.vertical, 4)
+                .padding(.horizontal, 16)
+                .frame(minWidth: 128)
+                .background(
+                    Capsule()
+                        .foregroundColor(Color("ColorTransparentBlack"))
+                )
+                
+                Spacer()
+                
             }
             // MARK: - Info Button
             .padding(.horizontal, 8)
