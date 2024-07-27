@@ -76,8 +76,7 @@ extension ContentView {
         } label: {
             Image(systemName: "arrow.2.circlepath.circle")
         }
-        .font(.title)
-        .accentColor(Color.white)
+        .modifier(OverlayButtonModifier())
     }
     
     var infoViewButton: some View {
@@ -86,7 +85,6 @@ extension ContentView {
         } label: {
             Image(systemName: "info.circle")
         }
-        .font(.title)
-        .accentColor(Color.white)
+        .modifier(OverlayButtonModifier())
     }
 }
