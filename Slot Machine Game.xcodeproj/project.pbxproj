@@ -25,6 +25,7 @@
 		589EB4B42C559B5600D3AE20 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B32C559B5600D3AE20 /* TextExtensions.swift */; };
 		589EB4B62C559D2B00D3AE20 /* GeneralModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B52C559D2B00D3AE20 /* GeneralModifiers.swift */; };
 		589EB4B82C559FCA00D3AE20 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */; };
+		589EB4BA2C55A05300D3AE20 /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B92C55A05300D3AE20 /* HighScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		589EB4B32C559B5600D3AE20 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 		589EB4B52C559D2B00D3AE20 /* GeneralModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModifiers.swift; sourceTree = "<group>"; };
 		589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		589EB4B92C55A05300D3AE20 /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				589EB48D2C55833500D3AE20 /* ContentView.swift */,
 				589EB4AF2C55924200D3AE20 /* LogoView.swift */,
 				589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */,
+				589EB4B92C55A05300D3AE20 /* HighScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				589EB4B82C559FCA00D3AE20 /* ScoreBoardView.swift in Sources */,
 				589EB4B02C55924200D3AE20 /* LogoView.swift in Sources */,
 				589EB48C2C55833500D3AE20 /* Slot_Machine_GameApp.swift in Sources */,
+				589EB4BA2C55A05300D3AE20 /* HighScoreView.swift in Sources */,
 				589EB4B42C559B5600D3AE20 /* TextExtensions.swift in Sources */,
 				589EB4B62C559D2B00D3AE20 /* GeneralModifiers.swift in Sources */,
 			);

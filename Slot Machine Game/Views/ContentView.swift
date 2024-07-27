@@ -29,6 +29,10 @@ struct ContentView: View {
                 // MARK: - SCRORE
                 HStack {
                     ScoreBoardView()
+                    
+                    Spacer()
+                    
+                    HighScoreView()
                 }
                 
                 Spacer()
