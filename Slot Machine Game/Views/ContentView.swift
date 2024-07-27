@@ -70,7 +70,14 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
                     
                     // MARK: - SPIN BUTTON
-                    
+                    Button(action: {
+                        print("Spin")
+                    }, label: {
+                        Image("gfx-spin")
+                            .renderingMode(.original)
+                            .resizable()
+                            .modifier(ReelImageModifier())
+                    })
                 }
                 .layoutPriority(2)
                 
