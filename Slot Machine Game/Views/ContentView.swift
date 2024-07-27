@@ -30,6 +30,7 @@ struct ContentView: View {
                 HStack {
                     Text("Your\nCoins".uppercased())
                         .scoreLabelStyle()
+                        .multilineTextAlignment(.trailing)
                     
                     Text("100")
                         .foregroundColor(.white)
