@@ -67,9 +67,10 @@
 		589EB48A2C55833500D3AE20 /* Slot Machine Game */ = {
 			isa = PBXGroup;
 			children = (
+				589EB4AA2C5588D400D3AE20 /* Views */,
+				589EB4AB2C5588E900D3AE20 /* Helpers */,
 				589EB4A92C5588AC00D3AE20 /* Sounds */,
 				589EB48B2C55833500D3AE20 /* Slot_Machine_GameApp.swift */,
-				589EB48D2C55833500D3AE20 /* ContentView.swift */,
 				589EB48F2C55833600D3AE20 /* Assets.xcassets */,
 				589EB4912C55833600D3AE20 /* Preview Content */,
 			);
@@ -97,6 +98,21 @@
 				589EB4A02C55889F00D3AE20 /* win.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		589EB4AA2C5588D400D3AE20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				589EB48D2C55833500D3AE20 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		589EB4AB2C5588E900D3AE20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
