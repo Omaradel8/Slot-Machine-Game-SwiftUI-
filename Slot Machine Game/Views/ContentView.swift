@@ -29,8 +29,7 @@ struct ContentView: View {
                 // MARK: - SCRORE
                 HStack {
                     Text("Your\nCoins".uppercased())
-                        .foregroundColor(.white)
-                        .font(.system(size: 10, weight: .bold, design: .rounded))
+                        .scoreLabelStyle()
                     
                     Text("100")
                         .foregroundColor(.white)
