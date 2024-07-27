@@ -23,7 +23,14 @@ struct ContentView: View {
                 // MARK: - HEADER
                 
                 LogoView()
+
+                Spacer()
             }
+            // MARK: - Info Button
+            .padding(.horizontal, 8)
+            .overlay (
+                resetGameButton
+            , alignment: .topLeading)
             .padding()
             .frame(maxWidth: .infinity)
         }
@@ -33,4 +40,17 @@ struct ContentView: View {
 // MARK: - PREVIEW
 #Preview {
     ContentView()
+}
+
+// MARK: - DESIGN VARIABLES
+extension ContentView {
+    var resetGameButton: some View {
+        Button {
+            print("Reset the game")
+        } label: {
+            Image(systemName: "arrow.2.circlepath.circle")
+        }
+        .font(.title)
+        .accentColor(Color.white)
+    }
 }
