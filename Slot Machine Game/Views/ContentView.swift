@@ -8,17 +8,72 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTOES
+    
+    // MARK: - BODY
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            
+            // MARK: - BACKGROUND
+            LinearGradient(gradient: Gradient(colors: [Color("ColorPink"), Color("ColorPurple")]), startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            
+            VStack(alignment: .center, spacing: 5) {
+                // MARK: - HEADER
+                
+                LogoView()
+
+                Spacer()
+                
+                // MARK: - SCRORE
+                HStack {
+                    ScoreBoardView()
+                    
+                    Spacer()
+                    
+                    HighScoreView()
+                }
+                
+                Spacer()
+                
+            }
+            // MARK: - Info Button
+            .padding(.horizontal, 8)
+            .overlay (
+                resetGameButton
+            , alignment: .topLeading)
+            .overlay(
+                infoViewButton
+                , alignment: .topTrailing)
+            .padding()
+            .frame(maxWidth: .infinity)
         }
-        .padding()
     }
 }
 
+// MARK: - PREVIEW
 #Preview {
     ContentView()
+}
+
+// MARK: - DESIGN VARIABLES
+extension ContentView {
+    var resetGameButton: some View {
+        Button {
+            print("Reset the game")
+        } label: {
+            Image(systemName: "arrow.2.circlepath.circle")
+        }
+        .modifier(OverlayButtonModifier())
+    }
+    
+    var infoViewButton: some View {
+        Button {
+            print("Info View")
+        } label: {
+            Image(systemName: "info.circle")
+        }
+        .modifier(OverlayButtonModifier())
+    }
 }

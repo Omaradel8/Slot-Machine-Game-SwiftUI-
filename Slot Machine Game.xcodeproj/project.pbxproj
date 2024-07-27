@@ -20,6 +20,12 @@
 		589EB4A72C55889F00D3AE20 /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589EB49F2C55889F00D3AE20 /* background-music.mp3 */; };
 		589EB4A82C55889F00D3AE20 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589EB4A02C55889F00D3AE20 /* win.mp3 */; };
 		589EB4AE2C558A5F00D3AE20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589EB4AD2C558A5F00D3AE20 /* LaunchScreen.storyboard */; };
+		589EB4B02C55924200D3AE20 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4AF2C55924200D3AE20 /* LogoView.swift */; };
+		589EB4B22C55926D00D3AE20 /* ShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B12C55926D00D3AE20 /* ShadowModifier.swift */; };
+		589EB4B42C559B5600D3AE20 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B32C559B5600D3AE20 /* TextExtensions.swift */; };
+		589EB4B62C559D2B00D3AE20 /* GeneralModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B52C559D2B00D3AE20 /* GeneralModifiers.swift */; };
+		589EB4B82C559FCA00D3AE20 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */; };
+		589EB4BA2C55A05300D3AE20 /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B92C55A05300D3AE20 /* HighScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,12 @@
 		589EB49F2C55889F00D3AE20 /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-music.mp3"; sourceTree = "<group>"; };
 		589EB4A02C55889F00D3AE20 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
 		589EB4AD2C558A5F00D3AE20 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		589EB4AF2C55924200D3AE20 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		589EB4B12C55926D00D3AE20 /* ShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowModifier.swift; sourceTree = "<group>"; };
+		589EB4B32C559B5600D3AE20 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
+		589EB4B52C559D2B00D3AE20 /* GeneralModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModifiers.swift; sourceTree = "<group>"; };
+		589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		589EB4B92C55A05300D3AE20 /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				589EB48D2C55833500D3AE20 /* ContentView.swift */,
+				589EB4AF2C55924200D3AE20 /* LogoView.swift */,
+				589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */,
+				589EB4B92C55A05300D3AE20 /* HighScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +129,9 @@
 		589EB4AB2C5588E900D3AE20 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				589EB4B12C55926D00D3AE20 /* ShadowModifier.swift */,
+				589EB4B32C559B5600D3AE20 /* TextExtensions.swift */,
+				589EB4B52C559D2B00D3AE20 /* GeneralModifiers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -197,8 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589EB4B22C55926D00D3AE20 /* ShadowModifier.swift in Sources */,
 				589EB48E2C55833500D3AE20 /* ContentView.swift in Sources */,
+				589EB4B82C559FCA00D3AE20 /* ScoreBoardView.swift in Sources */,
+				589EB4B02C55924200D3AE20 /* LogoView.swift in Sources */,
 				589EB48C2C55833500D3AE20 /* Slot_Machine_GameApp.swift in Sources */,
+				589EB4BA2C55A05300D3AE20 /* HighScoreView.swift in Sources */,
+				589EB4B42C559B5600D3AE20 /* TextExtensions.swift in Sources */,
+				589EB4B62C559D2B00D3AE20 /* GeneralModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
