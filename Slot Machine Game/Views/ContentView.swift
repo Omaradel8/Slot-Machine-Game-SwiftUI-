@@ -18,6 +18,14 @@ struct ContentView: View {
             // MARK: - BACKGROUND
             LinearGradient(gradient: Gradient(colors: [Color("ColorPink"), Color("ColorPurple")]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
+            
+            VStack(alignment: .center, spacing: 5) {
+                // MARK: - HEADER
+                
+                LogoView()
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
         }
     }
 }
