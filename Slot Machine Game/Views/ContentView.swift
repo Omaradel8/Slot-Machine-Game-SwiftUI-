@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTOES
+    
+    // MARK: - BODY
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            
+            // MARK: - BACKGROUND
+            LinearGradient(gradient: Gradient(colors: [Color("ColorPink"), Color("ColorPurple")]), startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
         }
-        .padding()
     }
 }
 
+// MARK: - PREVIEW
 #Preview {
     ContentView()
 }
