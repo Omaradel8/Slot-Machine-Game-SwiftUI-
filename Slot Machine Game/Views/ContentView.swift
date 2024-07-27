@@ -31,6 +31,9 @@ struct ContentView: View {
             .overlay (
                 resetGameButton
             , alignment: .topLeading)
+            .overlay(
+                infoViewButton
+                , alignment: .topTrailing)
             .padding()
             .frame(maxWidth: .infinity)
         }
@@ -49,6 +52,16 @@ extension ContentView {
             print("Reset the game")
         } label: {
             Image(systemName: "arrow.2.circlepath.circle")
+        }
+        .font(.title)
+        .accentColor(Color.white)
+    }
+    
+    var infoViewButton: some View {
+        Button {
+            print("Info View")
+        } label: {
+            Image(systemName: "info.circle")
         }
         .font(.title)
         .accentColor(Color.white)
