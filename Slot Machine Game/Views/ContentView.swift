@@ -28,15 +28,8 @@ struct ContentView: View {
                 
                 // MARK: - SCRORE
                 HStack {
-                    Text("Your\nCoins".uppercased())
-                        .scoreLabelStyle()
-                        .multilineTextAlignment(.trailing)
-                    
-                    Text("100")
-                        .scoreNumberStyle()
-                        .modifier(ScoreNumberModifier())
+                    ScoreBoardView()
                 }
-                .modifier(ScoreContainerModifier())
                 
                 Spacer()
                 
