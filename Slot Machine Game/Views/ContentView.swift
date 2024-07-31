@@ -81,8 +81,21 @@ struct ContentView: View {
                 }
                 .layoutPriority(2)
                 
+                // MARK: - Footer View
                 Spacer()
                 
+                HStack {
+                    // MARK: - Bet 20
+                    BetButtonView(isRight: true,
+                                  coins: 20,
+                                  isShowingCoins: false)
+                    
+                    // MARK: - Bet 10
+                    BetButtonView(isRight: false,
+                                  coins: 10,
+                                  isShowingCoins: true,
+                                  textColor: .yellow)
+                }
             }
             // MARK: - Info Button
             .padding(.horizontal, 8)
