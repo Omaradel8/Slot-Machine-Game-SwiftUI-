@@ -26,6 +26,7 @@
 		589EB4B62C559D2B00D3AE20 /* GeneralModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B52C559D2B00D3AE20 /* GeneralModifiers.swift */; };
 		589EB4B82C559FCA00D3AE20 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */; };
 		589EB4BA2C55A05300D3AE20 /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4B92C55A05300D3AE20 /* HighScoreView.swift */; };
+		589EB4BC2C55A26200D3AE20 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB4BB2C55A26200D3AE20 /* ReelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		589EB4B52C559D2B00D3AE20 /* GeneralModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModifiers.swift; sourceTree = "<group>"; };
 		589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 		589EB4B92C55A05300D3AE20 /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
+		589EB4BB2C55A26200D3AE20 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				589EB4AF2C55924200D3AE20 /* LogoView.swift */,
 				589EB4B72C559FCA00D3AE20 /* ScoreBoardView.swift */,
 				589EB4B92C55A05300D3AE20 /* HighScoreView.swift */,
+				589EB4BB2C55A26200D3AE20 /* ReelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				589EB4B22C55926D00D3AE20 /* ShadowModifier.swift in Sources */,
 				589EB48E2C55833500D3AE20 /* ContentView.swift in Sources */,
 				589EB4B82C559FCA00D3AE20 /* ScoreBoardView.swift in Sources */,
+				589EB4BC2C55A26200D3AE20 /* ReelView.swift in Sources */,
 				589EB4B02C55924200D3AE20 /* LogoView.swift in Sources */,
 				589EB48C2C55833500D3AE20 /* Slot_Machine_GameApp.swift in Sources */,
 				589EB4BA2C55A05300D3AE20 /* HighScoreView.swift in Sources */,
