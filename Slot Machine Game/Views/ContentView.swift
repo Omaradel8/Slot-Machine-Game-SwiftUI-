@@ -10,8 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: - PROPERTOES
-    @State private var showingInfoView: Bool = false
+    let symbols = ["gfx-bell", "gfx-cherry", "gfx-coin", "gfx-grape", "gfx-seven", "gfx-strawberry"]
     
+    @State private var reels: Array = [0, 1, 2]
+    @State private var showingInfoView: Bool = false
     
     // MARK: - BODY
     var body: some View {
@@ -43,7 +45,7 @@ struct ContentView: View {
                     ZStack {
                         ReelView()
                         
-                        Image("gfx-bell")
+                        Image(symbols[reels[0]])
                             .resizable()
                             .modifier(ReelImageModifier())
                     }
@@ -53,7 +55,7 @@ struct ContentView: View {
                         ZStack {
                             ReelView()
                             
-                            Image("gfx-seven")
+                            Image(symbols[reels[1]])
                                 .resizable()
                                 .modifier(ReelImageModifier())
                         }
@@ -64,7 +66,7 @@ struct ContentView: View {
                         ZStack {
                             ReelView()
                             
-                            Image("gfx-cherry")
+                            Image(symbols[reels[2]])
                                 .resizable()
                                 .modifier(ReelImageModifier())
                         }
@@ -73,7 +75,8 @@ struct ContentView: View {
                     
                     // MARK: - SPIN BUTTON
                     Button(action: {
-                        print("Spin")
+                        // SPIN THE REELS
+                        spinReels()
                     }, label: {
                         Image("gfx-spin")
                             .renderingMode(.original)
@@ -140,4 +143,20 @@ extension ContentView {
         }
         .modifier(OverlayButtonModifier())
     }
+}
+
+// MARK: - FUNCTIONS
+extension ContentView {
+    
+    // SPIN THE REELS
+    func spinReels() {
+        reels = reels.map( { _ in
+            Int.random(in: 0...symbols.count - 1)
+        } )
+    }
+    // CHECK THE WINNING
+    // PLAYER WINS
+    // NEW HIGH SCORE
+    // PLAYER LOSES
+    // GAME IS OVER
 }
