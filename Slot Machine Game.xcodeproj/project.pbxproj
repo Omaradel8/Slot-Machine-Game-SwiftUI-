@@ -11,6 +11,7 @@
 		581650752C5AA3AD00B4F504 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581650742C5AA3AD00B4F504 /* InfoView.swift */; };
 		581650772C5AA42A00B4F504 /* FormRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581650762C5AA42A00B4F504 /* FormRawView.swift */; };
 		5823A1592C5C5D750056AD68 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823A1582C5C5D750056AD68 /* HelperFunctions.swift */; };
+		5823A15C2C5C5FE20056AD68 /* BetAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823A15B2C5C5FE20056AD68 /* BetAmount.swift */; };
 		589EB48C2C55833500D3AE20 /* Slot_Machine_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB48B2C55833500D3AE20 /* Slot_Machine_GameApp.swift */; };
 		589EB48E2C55833500D3AE20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EB48D2C55833500D3AE20 /* ContentView.swift */; };
 		589EB4902C55833600D3AE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589EB48F2C55833600D3AE20 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		581650742C5AA3AD00B4F504 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		581650762C5AA42A00B4F504 /* FormRawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRawView.swift; sourceTree = "<group>"; };
 		5823A1582C5C5D750056AD68 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		5823A15B2C5C5FE20056AD68 /* BetAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetAmount.swift; sourceTree = "<group>"; };
 		589EB4882C55833500D3AE20 /* Slot Machine Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slot Machine Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		589EB48B2C55833500D3AE20 /* Slot_Machine_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot_Machine_GameApp.swift; sourceTree = "<group>"; };
 		589EB48D2C55833500D3AE20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5823A15A2C5C5FBF0056AD68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5823A15B2C5C5FE20056AD68 /* BetAmount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		589EB47F2C55833500D3AE20 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		589EB48A2C55833500D3AE20 /* Slot Machine Game */ = {
 			isa = PBXGroup;
 			children = (
+				5823A15A2C5C5FBF0056AD68 /* Model */,
 				589EB4AA2C5588D400D3AE20 /* Views */,
 				589EB4AB2C5588E900D3AE20 /* Helpers */,
 				589EB4A92C5588AC00D3AE20 /* Sounds */,
@@ -243,6 +254,7 @@
 				589EB4B42C559B5600D3AE20 /* TextExtensions.swift in Sources */,
 				581650732C5AA05C00B4F504 /* BetButtonView.swift in Sources */,
 				589EB4B62C559D2B00D3AE20 /* GeneralModifiers.swift in Sources */,
+				5823A15C2C5C5FE20056AD68 /* BetAmount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
