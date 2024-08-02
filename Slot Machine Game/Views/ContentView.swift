@@ -77,6 +77,9 @@ struct ContentView: View {
                     Button(action: {
                         // SPIN THE REELS
                         spinReels()
+                        
+                        // CHECK WINNING
+                        checkWinning()
                     }, label: {
                         Image("gfx-spin")
                             .renderingMode(.original)
@@ -155,8 +158,14 @@ extension ContentView {
         } )
     }
     // CHECK THE WINNING
-    // PLAYER WINS
-    // NEW HIGH SCORE
-    // PLAYER LOSES
+    func checkWinning() {
+        if areAllElementsEqual(reels) {
+            // PLAYER WINS
+            // NEW HIGH SCORE
+        }else{
+            // PLAYER LOSES
+        }
+    }
+    
     // GAME IS OVER
 }
