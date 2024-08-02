@@ -13,7 +13,7 @@ struct HighScoreView: View {
     
     var body: some View {
         HStack {
-            Text("200")
+            Text("\(highScore)")
                 .scoreNumberStyle()
                 .modifier(ScoreNumberModifier())
             

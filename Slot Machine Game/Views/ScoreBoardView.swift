@@ -17,7 +17,7 @@ struct ScoreBoardView: View {
                 .scoreLabelStyle()
                 .multilineTextAlignment(.trailing)
             
-            Text("100")
+            Text("\(coinsValue)")
                 .scoreNumberStyle()
                 .modifier(ScoreNumberModifier())
         }
