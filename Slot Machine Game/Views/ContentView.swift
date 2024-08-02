@@ -99,7 +99,8 @@ struct ContentView: View {
                     // MARK: - Bet 20
                     BetButtonView(isRight: true,
                                   coins: 20,
-                                  isShowingCoins: betAmount == .twenty ? true : false) {
+                                  isShowingCoins: betAmount == .twenty ? true : false,
+                                  textColor: betAmount == .twenty ? .yellow : .white) {
                         betAmount = .twenty
                     }
                     
@@ -107,7 +108,7 @@ struct ContentView: View {
                     BetButtonView(isRight: false,
                                   coins: 10,
                                   isShowingCoins: betAmount == .ten ? true : false,
-                                  textColor: .yellow) {
+                                  textColor: betAmount == .ten ? .yellow : .white) {
                         betAmount = .ten
                     }
                 }
