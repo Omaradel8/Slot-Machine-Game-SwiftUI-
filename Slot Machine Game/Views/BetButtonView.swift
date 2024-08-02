@@ -13,6 +13,7 @@ struct BetButtonView: View {
     var coins: Int
     var isShowingCoins: Bool
     var textColor: Color = .white
+    var didTapped: (()->())?
     
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
@@ -22,7 +23,7 @@ struct BetButtonView: View {
             }
             
             Button(action: {
-                print("Bet \(coins) coins")
+                didTapped?()
             }) {
                 Text("\(coins)")
                     .fontWeight(.heavy)
