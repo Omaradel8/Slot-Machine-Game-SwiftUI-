@@ -168,11 +168,17 @@ extension ContentView {
     func checkWinning() {
         if areAllElementsEqual(reels) {
             // PLAYER WINS
+            playerWin()
             // NEW HIGH SCORE
         }else{
             // PLAYER LOSES
         }
     }
+    
+    func playerWin() {
+        coins += betAmount.rawValue * 10
+    }
+    
     
     // GAME IS OVER
 }
