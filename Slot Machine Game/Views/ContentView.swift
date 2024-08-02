@@ -170,6 +170,9 @@ extension ContentView {
             // PLAYER WINS
             playerWin()
             // NEW HIGH SCORE
+            if coins > highScore {
+                newHighScore()
+            }
         }else{
             // PLAYER LOSES
         }
@@ -177,6 +180,10 @@ extension ContentView {
     
     func playerWin() {
         coins += betAmount.rawValue * 10
+    }
+    
+    func newHighScore() {
+        highScore = coins
     }
     
     
