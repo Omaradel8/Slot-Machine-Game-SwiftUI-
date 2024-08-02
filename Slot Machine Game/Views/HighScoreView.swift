@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HighScoreView: View {
+    
+    @Binding var highScore: Int
+    
     var body: some View {
         HStack {
             Text("200")
@@ -23,5 +26,5 @@ struct HighScoreView: View {
 }
 
 #Preview {
-    HighScoreView()
+    HighScoreView(highScore: .constant(200))
 }

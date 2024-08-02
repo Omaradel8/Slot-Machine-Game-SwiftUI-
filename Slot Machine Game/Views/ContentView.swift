@@ -12,6 +12,9 @@ struct ContentView: View {
     // MARK: - PROPERTOES
     let symbols = ["gfx-bell", "gfx-cherry", "gfx-coin", "gfx-grape", "gfx-seven", "gfx-strawberry"]
     
+    @State private var highScore: Int = 0
+    @State private var coins: Int = 100
+    @State private var betAmount: BetAmount = .ten
     @State private var reels: Array = [0, 1, 2]
     @State private var showingInfoView: Bool = false
     
@@ -32,11 +35,11 @@ struct ContentView: View {
                 
                 // MARK: - SCRORE
                 HStack {
-                    ScoreBoardView()
+                    ScoreBoardView(coinsValue: $coins)
                     
                     Spacer()
                     
-                    HighScoreView()
+                    HighScoreView(highScore: $highScore)
                 }
                 
                 // MARK: - SLOT MACHINE
@@ -96,13 +99,17 @@ struct ContentView: View {
                     // MARK: - Bet 20
                     BetButtonView(isRight: true,
                                   coins: 20,
-                                  isShowingCoins: false)
+                                  isShowingCoins: betAmount == .twenty ? true : false) {
+                        betAmount = .twenty
+                    }
                     
                     // MARK: - Bet 10
                     BetButtonView(isRight: false,
                                   coins: 10,
-                                  isShowingCoins: true,
-                                  textColor: .yellow)
+                                  isShowingCoins: betAmount == .ten ? true : false,
+                                  textColor: .yellow) {
+                        betAmount = .ten
+                    }
                 }
             }
             // MARK: - Info Button

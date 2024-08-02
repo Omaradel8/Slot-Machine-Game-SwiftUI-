@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ScoreBoardView: View {
+    
+    @Binding var coinsValue: Int
+    
     var body: some View {
         HStack {
             Text("Your\nCoins".uppercased())
@@ -23,5 +26,5 @@ struct ScoreBoardView: View {
 }
 
 #Preview {
-    ScoreBoardView()
+    ScoreBoardView(coinsValue: .constant(100))
 }
