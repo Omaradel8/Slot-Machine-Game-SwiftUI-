@@ -175,6 +175,7 @@ extension ContentView {
             }
         }else{
             // PLAYER LOSES
+            playerLosses()
         }
     }
     
@@ -186,6 +187,9 @@ extension ContentView {
         highScore = coins
     }
     
+    func playerLosses() {
+        coins -= betAmount.rawValue
+    }
     
     // GAME IS OVER
 }
