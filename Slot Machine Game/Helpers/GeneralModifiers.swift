@@ -57,7 +57,7 @@ struct BetNumberModifier: ViewModifier {
             .font(.system(.title, design: .rounded))
             .padding(.vertical, 5)
             .frame(width: 90)
-            .shadow(color: Color("ColorReansparentBlack"), radius: 0, x: 0, y: 3)
+            .shadow(color: Color("ColorTransparentBlack"), radius: 0, x: 0, y: 3)
     }
 }
 
